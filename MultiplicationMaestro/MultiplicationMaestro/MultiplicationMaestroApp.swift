@@ -11,7 +11,18 @@ struct MultiplicationMaestroApp: App {
     /// - Tag: mm_app_level
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabView {
+                ContentView()
+                    .tabItem({
+                        Image(systemName: "person.fill.questionmark")
+                        Text("Practice")
+                    })
+                ResultListView()
+                    .tabItem({
+                        Image(systemName: "eyes")
+                        Text("History")
+                    })
+            }
         }
     }
 }

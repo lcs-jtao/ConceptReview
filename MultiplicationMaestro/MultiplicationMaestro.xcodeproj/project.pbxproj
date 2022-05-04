@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C0B0B512822DEB1009A4F5B /* ResultListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0B0B502822DEB1009A4F5B /* ResultListView.swift */; };
 		8159D0E127BFAFBC00613590 /* MultiplicationMaestroApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8159D0E027BFAFBC00613590 /* MultiplicationMaestroApp.swift */; };
 		8159D0E327BFAFBC00613590 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8159D0E227BFAFBC00613590 /* ContentView.swift */; };
 		8159D0E527BFAFBD00613590 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8159D0E427BFAFBD00613590 /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6C0B0B502822DEB1009A4F5B /* ResultListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultListView.swift; sourceTree = "<group>"; };
 		8159D0DD27BFAFBC00613590 /* MultiplicationMaestro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiplicationMaestro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8159D0E027BFAFBC00613590 /* MultiplicationMaestroApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplicationMaestroApp.swift; sourceTree = "<group>"; };
 		8159D0E227BFAFBC00613590 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				8159D0E227BFAFBC00613590 /* ContentView.swift */,
+				6C0B0B502822DEB1009A4F5B /* ResultListView.swift */,
 				81DDFE51281F5303008DED99 /* Helpers */,
 			);
 			path = Views;
@@ -183,6 +186,7 @@
 				8159D0E327BFAFBC00613590 /* ContentView.swift in Sources */,
 				81DDFE55281F555C008DED99 /* QuestionPresentationView.swift in Sources */,
 				81DDFE53281F5320008DED99 /* PriorResultView.swift in Sources */,
+				6C0B0B512822DEB1009A4F5B /* ResultListView.swift in Sources */,
 				8159D0E127BFAFBC00613590 /* MultiplicationMaestroApp.swift in Sources */,
 				81DDFE57281F5614008DED99 /* AnswerAndResultView.swift in Sources */,
 				81DDFE59281F5789008DED99 /* CheckAnswerButtonView.swift in Sources */,
