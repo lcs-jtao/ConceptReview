@@ -66,6 +66,7 @@ struct ContentView: View {
             }
             
         }
+        .navigationTitle("Practice")
         .padding(.horizontal)
         .font(.system(size: 72))
         
@@ -75,6 +76,8 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(results: .constant([]))
+        NavigationView {
+            ContentView(results: .constant([]))
+        }
     }
 }

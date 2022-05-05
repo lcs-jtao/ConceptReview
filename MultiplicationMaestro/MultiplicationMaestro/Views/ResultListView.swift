@@ -21,11 +21,14 @@ struct ResultListView: View {
             // Use a helper view to display each prior result
             PriorResultView(result: currentResult)
         }
+        .navigationTitle("History")
     }
 }
 
 struct ResultListView_Previews: PreviewProvider {
     static var previews: some View {
-        ResultListView(results: .constant([]))
+        NavigationView {
+            ResultListView(results: .constant([]))
+        }
     }
 }
