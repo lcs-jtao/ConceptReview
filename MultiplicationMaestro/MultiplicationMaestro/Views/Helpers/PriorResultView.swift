@@ -20,6 +20,7 @@ struct PriorResultView: View {
             Text("×")
             Text("\(result.multiplier)")
             Text("=")
+                .opacity(result.inputGiven == "" ? 0.0 : 1.0)
             Text("\(result.inputGiven)")
             Text("(\(result.correctProduct))")
                 .opacity(result.answerCorrect == false ? 1.0 : 0.0)
