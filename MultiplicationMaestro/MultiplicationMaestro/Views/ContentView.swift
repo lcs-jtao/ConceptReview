@@ -24,7 +24,7 @@ struct ContentView: View {
     @State var answerCorrect: Bool = false
     
     // Tracks the results of all questions answered so far
-    @State var results: [Result] = []
+    @Binding var results: [Result]
 
     // MARK: Computed properties
     // The main user interface
@@ -64,12 +64,6 @@ struct ContentView: View {
                                       inputGiven: $inputGiven)
 
             }
-
-            // Show results of prior questions attempted
-            List(results) { currentResult in
-                // Use a helper view to display each prior result
-                PriorResultView(result: currentResult)
-            }
             
         }
         .padding(.horizontal)
@@ -81,6 +75,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(results: .constant([]))
     }
 }
